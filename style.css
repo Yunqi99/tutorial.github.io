@@ -1,0 +1,866 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url("./helvetica-neue-5/HelveticaNeueLight.otf");
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url("./helvetica-neue-5/HelveticaNeueBold.otf");
+}
+
+@font-face {
+    font-family: 'Ultramagnetic';
+    src: url("./Ultramagnetic\ Regular/Ultramagnetic\ Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.img-fluid,
+img {
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.container-fluid {
+    height: auto;
+}
+
+.outline-text {
+    color: #FECE00;
+    /* text-shadow: -2px -2px 0 #F30020, 2px -2px 0 #F30020, -2px 2px 0 #F30020, 2px 2px 0 #F30020, 2px 0px 0 #F30020, -2px 0px 0 #F30020, 0px 2px 0 #F30020, 0px -2px 0 #F30020; */
+    display: inline-block;
+    text-shadow: -4px -4px 0 #F30020, 4px -4px 0 #F30020, -4px 4px 0 #F30020, 4px 4px 0 #F30020, 4px 0px 0 #F30020, -4px 0px 0 #F30020, 0px 4px 0 #F30020, 0px -4px 0 #F30020;
+}
+
+.outline-text-slim {
+    color: #FECE00;
+    text-shadow: -2px -2px 0 #F30020, 2px -2px 0 #F30020, -2px 2px 0 #F30020, 2px 2px 0 #F30020, 2px 0px 0 #F30020, -2px 0px 0 #F30020, 0px 2px 0 #F30020, 0px -2px 0 #F30020;
+    display: inline-block;
+}
+
+
+/* Navbar styles */
+nav {
+    background-color: #FECE00;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #F20120;
+    position: relative;
+    display: block;
+    z-index: 900;
+}
+
+
+.navbar img {
+    width: 130px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    /* Adjusted left position */
+    z-index: 903;
+}
+
+.navbar-toggler {
+    background-color: #FECE00 !important;
+    color: #1E4894 !important;
+    box-shadow: 1px 1px 5px rgba(148, 121, 0, 0.5);
+    z-index: 905;
+}
+
+.navbar-toggler:hover {
+    box-shadow: inset 1px 1px 5px rgba(205, 168, 2, 0.5);
+}
+
+/* Navbar links */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 20px;
+    color: #1E4894;
+    border-radius: 20px;
+    transition: background-color 0.3s, font-weight 0.3s, text-decoration 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    /* background-color: #ffffff8f; */
+    /* Adjusted hover background color */
+    text-decoration: none;
+    color: #1E4894;
+    transform: scale(1.1);
+}
+
+.navbar-nav li a {
+    font-size: 25px;
+    font-family: 'Ultramagnetic';
+    padding: 5px;
+}
+
+
+/* .navbar-toggler:focus {
+    box-shadow: inset 1px 1px 5px #cda802;
+    border-radius: 1px solid #fff !important;
+} */
+
+
+#main-content {
+    max-width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+
+#main-content img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 100%;
+    height: 100%;
+}
+
+#main-content .col-md-3 {
+    background-color: #fff;
+    position: absolute;
+    border: none;
+    border-radius: 0 50px 0 0;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 50px;
+}
+
+#main-content .col-md-10 {
+    padding-right: 15px;
+}
+
+
+#main-content .col-md-10 button {
+    color: #1E4894;
+    background-color: none;
+    font-size: 30px;
+    border: none;
+    opacity: 1;
+    position: static;
+    margin: 0 10px;
+}
+
+
+/* Second Content */
+#product {
+    background-image: url("./Asset/background-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+#product h1 {
+    font-size: 55px;
+    ;
+    font-weight: bold;
+    font-family: 'Ultramagnetic';
+    padding-top: 70px;
+}
+
+#product p {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+#product p b {
+    font-family: 'Helvetica Neue Bold';
+}
+
+#product .row .col-md-3 {
+    height: auto;
+    display: flex;
+    margin: 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#product .row .col-md-3 img {
+    width: 92%;
+    transition: 0.3s;
+}
+
+#product .row .col-md-3 img:hover {
+    transform: scale(1.1);
+}
+
+#product #buttermilk {
+    padding-top: 40px;
+}
+
+
+/* Third Content */
+#third-content {
+    background-image: url("./Asset/background-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0;
+    right: 0;
+    padding: 5.3rem;
+    max-width: 100%;
+    height: auto;
+}
+
+#third-content .row {
+    width: 95%;
+}
+
+#third-content #nuggetPacks-cont {
+    padding: 0 20px;
+}
+
+#third-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Ultramagnetic';
+}
+
+#third-content h2 {
+    color: #1E4894;
+    font-family: 'Ultramagnetic';
+    margin: 10px 0;
+    font-size: 39px;
+}
+
+#third-content p {
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#third-content .col-md-1 button {
+    color: #1E4894;
+    font-size: 65px;
+    border: none;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    transform: scale(1);
+}
+
+#third-content button span {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+#third-content .col-md-1 button span:hover {
+    font-size: 80px;
+}
+
+#third-content .hidden {
+    display: none;
+}
+
+#third-content #indicators button {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+#third-content #indicators button.active {
+    background-color: #1E4894;
+}
+
+
+/* Fourth Content */
+#game {
+    background-image: url("./Asset/background-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+#game #nuggetQuest {
+    padding-top: 75px;
+}
+
+#game #game-mainCopy {
+    font-weight: bold;
+    font-family: 'Ultramagnetic';
+    font-size: 55px;
+    padding: 45px 0;
+}
+
+#game #phone img {
+    max-width: 90%;
+}
+
+#game #nuggetQuestCopy {
+    height: 15vh;
+    padding-top: 45px;
+}
+
+
+/* Fifth Content */
+#fifth-content {
+    background-image: url("./Asset/background-5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    padding: 50px 0;
+    /* box-sizing: border-box;
+    border: none; */
+    /* font-size: 20.5px;
+    line-height: 28px;
+    padding-bottom: 5px; */
+}
+
+#fifth-content b {
+    font-family: 'Helvetica Neue Bold';
+    font-size: 25px;
+}
+
+#fifth-content #bookRow {
+    background-image: url("./Asset/book\ BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: auto;
+    max-width: 100%;
+    padding: 20px;
+}
+
+#fifth-content #leftBook,
+#fifth-content #rightBook {
+    margin: 50px 40px;
+    padding: 5px 0;
+}
+
+/* #fifth-content #leftBook {
+    background-image: url("./Asset/book1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: table-cell;
+    max-width: 100%;
+    height: 100%;
+    padding: 50px 10px 40px 30px;
+}
+
+#fifth-content #rightBook {
+    background-image: url("./Asset/book2.png");
+    background-size: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    display: table-cell;
+    max-width: 100%;
+    height: 100%;
+    padding: 30px 30px 30px 10px;
+} */
+
+#fifth-content #leftBook h1 {
+    font-size: 50px;
+    font-family: 'Ultramagnetic';
+    font-weight: bold;
+}
+
+
+#fifth-content #leftBook p {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 15px 0px 25px 0px;
+}
+
+#fifth-content #rightBook p {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+#fifth-content #leftBook #voucher {
+    width: 75%;
+}
+
+
+#fifth-content #rightBook #icons a {
+    width: 15%;
+    margin: 0 15px;
+    filter: drop-shadow(0 0 0.3rem #515151);
+    transition: 0.3s;
+}
+
+#fifth-content #rightBook #icons a:hover {
+    transform: scale(1.15);
+}
+
+#fifth-content #rightBook #kevin {
+    margin: 30px 0;
+    width: 50%;
+}
+
+#fifth-content button {
+    font-family: 'Ultramagnetic';
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #1E4894;
+    border-radius: 40px;
+    border: none;
+    padding: 7px 40px;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 0.3rem #515151);
+    transition: 0.3s;
+}
+
+#fifth-content button:hover {
+    transform: scale(1.15);
+}
+
+/* Last content - Event */
+#event {
+    max-width: 100%;
+    background-image: url("./Asset/Background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    padding-top: 65px;
+}
+
+#event #main-copy h1 {
+    font-size: 45px;
+    color: #1E4894;
+    letter-spacing: 2px;
+    line-height: 60px;
+    font-weight: bold;
+    font-family: 'Ultramagnetic';
+}
+
+#event #main-copy span {
+    font-size: 50px;
+    font-family: 'Ultramagnetic';
+}
+
+#event #sub-copy {
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    color: #3C3C3A;
+    margin: 20px auto;
+}
+
+#event #dateVenue p {
+    font-size: 35px;
+    line-height: 40px;
+    font-family: 'Ultramagnetic';
+    font-weight: bolder;
+    color: #fff;
+    padding: 2px;
+    text-shadow: -4px -4px 0 #06508E, 4px -4px 0 #06508E, -4px 4px 0 #06508E, 4px 4px 0 #06508E, 4px 0px 0 #06508E, -4px 0px 0 #06508E, 0px 4px 0 #06508E, 0px -4px 0 #06508E;
+
+    /* text-shadow: 1px 1px 5px #3c3c3a; */
+}
+
+
+#event a img {
+    max-width: 80%;
+    filter: drop-shadow(0 0 0.3rem #515151);
+    transition: 0.3s;
+}
+
+#event a img:hover {
+    transform: scale(1.15);
+}
+
+footer {
+    background-color: #FFF9DA;
+    height: auto;
+    max-width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Animation */
+/* Define a fadeIn animation with delays */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0, 0);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* Apply the fadeIn animation to an element with different delays */
+.animate__fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    /* Animation duration */
+    animation-fill-mode: forwards;
+    /* Keep the final state of the animation */
+    opacity: 0;
+}
+
+
+.bounce-up {
+    width: 100px;
+    height: 100px;
+    animation: bounceUp 1s infinite alternate;
+    /* Apply upward bounce animation */
+}
+
+.bounce-down {
+    width: 100px;
+    height: 100px;
+    animation: bounceDown 1s infinite alternate;
+    /* Apply downward bounce animation */
+}
+
+/* Define upward bounce animation */
+@keyframes bounceUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+
+    /* Adjust bounce height */
+}
+
+/* Define downward bounce animation */
+@keyframes bounceDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+
+    /* Adjust bounce height */
+}
+
+@media (max-width: 1700px) {
+    #fifth-content #bookRow {
+        background-image: url("./Asset/book\ BG.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 100% auto;
+        margin: auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    #third-content h1 {
+        font-size: 43px;
+    }
+
+    #third-content h2 {
+        font-size: 32px;
+    }
+
+    #third-content p {
+        line-height: 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .slideContent1,
+    .slideContent2 {
+        max-width: 100%;
+        /* Ensures text doesn't overflow its container */
+    }
+
+    /* #third-content {
+        background-image: url("./Asset/background-3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 0;
+        right: 0;
+        padding: 5.3rem;
+        max-width: 100%;
+        height: auto;
+    } */
+
+    /* #third-content .col-md-6 {
+        margin: 15px 0;
+    } */
+
+    /* #third-content #thirdTitle {
+        padding-top: 7px;
+        text-align: center;
+    } */
+
+    /* #third-content h2,
+    #third-content p {
+        text-align: center;
+    } */
+
+
+    #third-content h1 {
+        font-size: 35px;
+    }
+
+    #third-content h2 {
+        font-size: 28px;
+    }
+
+    #third-content p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+
+
+    #game #phone img {
+        max-width: 90%;
+    }
+
+
+
+    #fifth-content #bookRow {
+        background-image: url("./Asset/book\ BG.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 100% auto;
+        ;
+        margin: auto;
+        width: 100%;
+        padding: 35px 30px;
+    }
+
+    #fifth-content #leftBook h1 {
+        font-size: 38px;
+    }
+
+
+    #fifth-content #leftBook p {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    #fifth-content #rightBook p {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    #fifth-content #leftBook #voucher {
+        width: 73%;
+    }
+
+
+    #fifth-content #rightBook #kevin {
+        margin: 20px 0;
+        width: 48%;
+    }
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-brand {
+        max-width: 100%;
+    }
+
+    .navbar-brand img {
+        max-width: 25%;
+    }
+
+    .navbar-collapse {
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        width: 100% !important;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    #product {
+        background-image: url("./Asset/background-2.png");
+        background-repeat: no-repeat;
+        background-position: 50% 150%;
+        background-size: cover;
+    }
+
+    #product .row .col-md-3 img {
+        max-width: 50%;
+    }
+
+
+
+
+    #third-content .col-md-6 {
+        margin: 15px 0;
+    }
+
+    #third-content #thirdTitle {
+        padding-top: 7px;
+        text-align: center;
+    }
+
+    #third-content h2,
+    #third-content p {
+        text-align: center;
+    }
+
+
+
+
+    #game #nuggetQuest {
+        max-width: 70%;
+    }
+
+    #game #game-mainCopy {
+        font-weight: bold;
+        font-family: 'Ultramagnetic';
+        font-size: 50px;
+        padding: 45px 0;
+    }
+
+
+
+
+    #fifth-content #bookRow {
+        background-image: url("./Asset/book\ BG.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% auto;
+        ;
+        max-width: 100%;
+        padding: 25px 0px;
+    }
+
+    #fifth-content #leftBook,
+    #fifth-content #rightBook {
+        /* background-color: #3C3C3A; */
+        width: 50%;
+        margin: 5px 20px;
+    }
+
+
+    #fifth-content #leftBook h1 {
+        font-size: 30px;
+    }
+
+
+    #fifth-content #leftBook p {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    #fifth-content #leftBook p b {
+        font-size: 23px;
+    }
+
+    #fifth-content #rightBook p {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 0 5px;
+    }
+
+    #fifth-content #leftBook #voucher {
+        width: 75%;
+    }
+
+
+    #fifth-content #rightBook #kevin {
+        margin: 10px 0;
+        width: 50%;
+    }
+
+
+
+    #event a img {
+        margin: 15px 0;
+        max-width: 35%;
+    }
+
+
+
+}
