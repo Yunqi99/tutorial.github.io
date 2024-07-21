@@ -163,9 +163,9 @@
             <h1 id="game-mainCopy" class="outline-text">LOADING… A WORLD OF NEW & EXCITING FLAVOURS</h1>
         </div>
         <div class="col-md-8 mx-auto d-flex justify-content-center align-items-center" id="phone">
-            <picture class="mx-auto d-flex justify-content-center align-items-centerr">
+            <picture class="mx-auto d-flex justify-content-center align-items-center">
                 <source id="webp-source" srcset="./Asset/1200x590px-animated-phone.webp" alt="Webp of game" />
-                <img id="fallback-img" src="./Asset/1200x590px-animated-phone-optimized.gif" alt="GIF of game">
+                <img id="fallback-img" src="./Asset/1200x590px-animated-phone.webp" alt="GIF of game">
             </picture>
             <!-- <img src="./Asset/1200x590px-animated-phone.webp" alt="Phone with game" /> -->
         </div>
@@ -245,17 +245,20 @@
 
     <script>
         function isSafari() {
-            return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            return /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && navigator.userAgent.indexOf('Chrome') === -1;
         }
+
+
 
         document.addEventListener('DOMContentLoaded', function () {
             if (isSafari()) {
                 var webpSource = document.getElementById('webp-source');
                 var fallbackImg = document.getElementById('fallback-img');
                 webpSource.remove();
-                fallbackImg.src = "./Asset/1200x590px-animated-phone-optimized.gif";
+                fallbackImg.src = "./Asset/1200x590px-animated-phone.webp";
             }
         });
+        
 
         // Toggle function for third content
         function toggleContent(slideNumber) {
