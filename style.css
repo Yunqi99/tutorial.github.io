@@ -235,6 +235,7 @@ nav {
     padding: 0 20px;
 }
 
+
 #third-content h1 {
     font-size: 50px;
     font-weight: bold;
@@ -295,15 +296,6 @@ nav {
 }
 
 
-#third-content .col-md-6 {
-    height: auto;
-}
-
-#third-content .col-md-6 img {
-    height: auto;
-}
-
-
 /* Fourth Content */
 #game {
     background-image: url("./Asset/background-4.png");
@@ -331,13 +323,14 @@ nav {
 }
 
 #game #phone img {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 #game #nuggetQuestCopy {
     height: 15vh;
     padding-top: 45px;
 }
+
 
 
 /* Fifth Content */
@@ -378,16 +371,21 @@ nav {
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: 100% 100%;
-    max-width: 100%;
+    display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    background-position: 50% 0;
+    background-size: 100% 100%;
+    margin-bottom: 60px;
     /* padding: 25px 0px; */
 }
 
+
 #fifth-content #leftBook,
 #fifth-content #rightBook {
-    margin: 50px 40px;
-    padding: 5px 0;
+    width: calc(100%/2 - 20px);
+    margin: 60px 20px 40px 20px;
+    box-sizing: border-box;
 }
 
 /* #fifth-content #leftBook {
@@ -618,49 +616,6 @@ footer {
 
 
 @media (max-width: 468px) {
-
-    #fifth-content #leftBook,
-    #fifth-content #rightBook {
-        padding-top: 30px !important;
-        /* background-color: #ff809190; */
-        width: 100%  !important;
-    }
-
-    #fifth-content #leftBook h1 {
-        font-size: 28px !important;
-    }
-
-    #fifth-content #rightBook .col-md-8 {
-        width: 55%;
-    }
-
-
-    #fifth-content #leftBook p {
-        font-size: 16px !important;
-        line-height: 25px;
-    }
-
-    #fifth-content #leftBook p b {
-        font-size: 20px !important;
-    }
-
-    #fifth-content #rightBook p {
-        font-size: 15px !important;
-        line-height: 20px !important;
-    }
-
-    #fifth-content #leftBook #voucher {
-        width: 50% !important;
-    }
-
-    #fifth-content #rightBook a {
-        width: 10% !important;
-    }
-
-    #fifth-content #rightBook #kevin {
-        width: 35% !important;
-    }
-
     #fifth-content button {
         font-size: 25px;
         letter-spacing: 1px;
@@ -668,7 +623,7 @@ footer {
         padding: 7px 30px;
     }
 
-    #third-content{
+    #third-content {
         margin: 0;
         background-image: url('./Asset/S3-mobile.jpg');
         background-position: 50% 0;
@@ -679,6 +634,25 @@ footer {
         justify-content: center;
         align-items: center;
         background-color: #f0f0f0;
+    }
+
+    #fifth-content #bookRow {
+        margin-bottom: 0px !important;
+    }
+
+    #fifth-content #leftBook,
+    #fifth-content #rightBook {
+        /* background-color: #3C3C3A; */
+        width: 80% !important;
+    }
+
+    
+    #fifth-content #leftBook h1 {
+        font-size: 30px !important;
+    }
+
+    #fifth-content p {
+        font-size: 19px !important;
     }
 }
 
@@ -696,51 +670,6 @@ footer {
         align-items: center;
         background-color: #f0f0f0;
     }
-
-
-    #fifth-content #leftBook,
-    #fifth-content #rightBook {
-        /* background-color: #e4a4ff7e; */
-        width: auto;
-        padding-top: 60px;
-    }
-
-
-    #fifth-content #leftBook h1 {
-        font-size: 30px;
-    }
-
-    #fifth-content #rightBook .col-md-8 {
-        width: 55%;
-    }
-
-
-    #fifth-content #leftBook p {
-        font-size: 16px !important;
-        line-height: 25px;
-    }
-
-    #fifth-content #leftBook p b {
-        font-size: 20px !important;
-    }
-
-    #fifth-content #rightBook p {
-        font-size: 15px !important;
-        line-height: 20px !important;
-    }
-
-    #fifth-content #leftBook #voucher {
-        width: 50% !important;
-    }
-
-    #fifth-content #rightBook a {
-        width: 10% !important;
-    }
-
-    #fifth-content #rightBook #kevin {
-        width: 35% !important;
-    }
-
 
 }
 
@@ -813,7 +742,8 @@ footer {
         max-width: 100%;
         height: auto;
     }
-/* 
+
+    /* 
     #third-content {
         margin: 0;
         background-image: url('./Asset/S3-mobile.jpg');
@@ -827,9 +757,6 @@ footer {
         background-color: #f0f0f0;
     } */
 
-    #third-content .col-md-6 {
-        margin: 15px 0;
-    }
 
     #third-content #thirdTitle {
         padding-top: 7px;
@@ -845,6 +772,7 @@ footer {
         font-size: 20px;
         line-height: 25px;
     }
+
 
 
 
@@ -878,43 +806,8 @@ footer {
     #fifth-content #leftBook,
     #fifth-content #rightBook {
         /* background-color: #3C3C3A; */
-        width: 50%;
-        margin: 5px 20px;
+        width: 80% !important;
     }
-
-
-    #fifth-content #leftBook h1 {
-        font-size: 26px;
-    }
-
-
-    #fifth-content #leftBook p {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    #fifth-content #leftBook p b {
-        font-size: 23px;
-    }
-
-    #fifth-content #rightBook p {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 0 5px;
-    }
-
-    #fifth-content #leftBook #voucher {
-        width: 73%;
-    }
-
-
-    #fifth-content #rightBook #kevin {
-        margin: 10px 0;
-        width: 50%;
-    }
-
 
 
     #event a img {
@@ -964,13 +857,6 @@ footer {
         height: auto;
     }
 
-    #third-content .col-md-6 {
-        height: auto;
-    }
-
-    #third-content .col-md-6 img {
-        height: auto;
-    }
 
     #third-content h1 {
         font-size: 35px;
@@ -1010,13 +896,30 @@ footer {
     }
 
 
+    #fifth-content #bookRow {
+        background-image: url("./Asset/book\ BG.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-position: 50% 0;
+        background-size: 100% 100%;
+        margin-bottom: 60px;
+    }
+
+    #fifth-content #leftBook,
+    #fifth-content #rightBook {
+        width: calc(100%/2);
+    }
+
+
+
     #fifth-content #leftBook h1 {
         font-size: 38px;
     }
 
 
     #fifth-content #leftBook p {
-        font-weight: bold;
         font-size: 20px;
         line-height: 26px;
     }
@@ -1038,6 +941,30 @@ footer {
     }
 }
 
+@media (min-width: 993px) {
+
+
+    #fifth-content #bookRow {
+        background-image: url("./Asset/book\ BG.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-position: 50% 0;
+        background-size: 100% 100%;
+        margin-bottom: 60px;
+    }
+
+    #fifth-content #leftBook,
+    #fifth-content #rightBook {
+        width: calc(100%/2 - 45px);
+    }
+
+    #fifth-content #leftBook h1 {
+        font-size: 40px;
+    }
+}
+
 
 @media (min-width: 1300px) {
 
@@ -1054,16 +981,18 @@ footer {
         font-size: 15px;
     }
 
+
     #fifth-content #bookRow {
         padding: 10px 20px;
     }
 
-    
+
 }
 
 
 @media (min-width: 1700px) {
-    #fifth-content #bookRow {
+
+    /* #fifth-content #bookRow {
         background-image: url("./Asset/book\ BG.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -1071,21 +1000,20 @@ footer {
         margin: auto;
         width: 100%;
         padding: 30px;
-    }
+    } */
 
-    #fifth-content #leftBook {
-        background-color: #ff516899;
-    }
-
-    #fifth-content #rightBook {
-        background-color: #51ceff99 ;
-    }
-
-    #fifth-content #leftBook,
-    #fifth-content #rightBook {
-        /* padding: 20px 15px; */
-        width: 26%;
-        /* background-color: #FECE00; */
+    #fifth-content #bookRow {
+        background-image: url("./Asset/book\ BG.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-position: 50% 0;
+        background-size: 100% 100%;
+        margin-bottom: 60px;
+        /* padding: 25px 0px; */
     }
 
 }
