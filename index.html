@@ -14,7 +14,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     <!-- jQuery (if needed) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -62,9 +65,10 @@
         <div class="col-md-3 d-flex justify-content-center align-items-center">
             <div class="col-md-10 d-flex justify-content-center align-items-center">
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
-                    data-bs-slide="prev"><span>&#11207;</span></button>
+                    data-bs-slide="prev"><span class="fas fa-caret-left"></span></button>
+                   
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
-                    data-bs-slide="next"><span>&#11208;</span></button>
+                    data-bs-slide="next"><span class="fas fa-caret-right"></span></button>
             </div>
         </div>
     </div>
@@ -104,7 +108,7 @@
             <div class="col-md-6" id="nuggetPacks-cont">
                 <div class="d-flex align-items-center">
                     <div class="col-md-1 d-flex justify-content-center align-items-center">
-                        <button onclick="toggleContent(1)" type="button"><span>&#11207;</span></button>
+                        <button onclick="toggleContent(1)" type="button"><span class="fas fa-caret-left"></span></button>
                     </div>
 
                     <div class="col-9 col-md-9 mx-auto d-flex align-items-center justify-content-center">
@@ -112,7 +116,7 @@
                         <img class="img-fluid slideContent2 animate__fadeIn hidden" src="./Asset/Smoky.png" alt="smoky">
                     </div>
                     <div class="col-md-1 d-flex justify-content-center align-items-center">
-                        <button onclick="toggleContent(2)" type="button"><span>&#11208;</span></button>
+                        <button onclick="toggleContent(2)" type="button"><span class="fas fa-caret-right"></span></button>
                     </div>
                 </div>
 
