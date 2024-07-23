@@ -48,11 +48,13 @@
         <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./Asset/mob-banner-1.jpg" class="d-block w-100 d-md-none" alt="First slide of main content" />
+                    <img src="./Asset/mob-banner-1.jpg" class="d-block w-100 d-md-none"
+                        alt="First slide of main content" />
                     <img src="./Asset/main-1.png" class="d-none d-md-block w-100" alt="First slide of main content" />
                 </div>
                 <div class="carousel-item">
-                    <img src="./Asset/mob-banner-2.jpg" class="d-block w-100 d-md-none" alt="Second slide of main content" />
+                    <img src="./Asset/mob-banner-2.jpg" class="d-block w-100 d-md-none"
+                        alt="Second slide of main content" />
                     <img src="./Asset/main-2.png" class="d-none d-md-block w-100" alt="Second slide of main content" />
                 </div>
             </div>
@@ -74,7 +76,8 @@
             <h1 class="outline-text">Welcoming Buttermilk and Smoky<br>to the First Pride Family</h1>
         </div>
 
-        <p class="col-md-7 mx-auto text-center">We're taking <b>juicy, crispy, and meaty</b> to a whole new level with our
+        <p class="col-md-7 mx-auto text-center">We're taking <b>juicy, crispy, and meaty</b> to a whole new level with
+            our
             <b>new Buttermilk</b> and <b>Smoky</b> chicken nuggets
         </p>
 
@@ -162,7 +165,7 @@
         </div>
         <div class="col-md-8 mx-auto d-flex justify-content-center align-items-center" id="phone">
             <picture class="mx-auto d-flex justify-content-center align-items-center">
-                <!-- <source id="webp-source" srcset="./Asset/1200x590px-animated-phone.webp" alt="Webp of game" /> -->
+                <source id="webp-source" srcset="./Asset/1200x590px-animated-phone.webp" alt="Webp of game" />
                 <img id="fallback-img" src="./Asset/1200x590px-animated-phone-min.gif" alt="GIF of game">
             </picture>
             <!-- <img src="./Asset/1200x590px-animated-phone.webp" alt="Phone with game" /> -->
@@ -236,7 +239,8 @@
         </div>
     </div>
 
-    <footer class="d-flex align-items-center justify-content-center text-center">&#169; Copyright 2024 Tyson Foods (Malaysia) Sdn.
+    <footer class="d-flex align-items-center justify-content-center text-center">&#169; Copyright 2024 Tyson Foods
+        (Malaysia) Sdn.
         Bhd. All Rights Reserved</footer>
 
 
@@ -245,17 +249,23 @@
             return /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && navigator.userAgent.indexOf('Chrome') === -1;
         }
 
-
+        function isChrome() {
+            return /chrome/i.test(navigator.userAgent) && !/edge|edg|opr/i.test(navigator.userAgent);
+        }
 
         document.addEventListener('DOMContentLoaded', function () {
+            var webpSource = document.getElementById('webp-source');
+            var fallbackImg = document.getElementById('fallback-img');
+
             if (isSafari()) {
-                var webpSource = document.getElementById('webp-source');
-                var fallbackImg = document.getElementById('fallback-img');
                 webpSource.remove();
-                fallbackImg.src = "./Asset/1200x590px-animated-phone-min.gif";
+            } else if (isChrome()) {
+                fallbackImg.src = "./Asset/1200x590px-animated-phone.webp";
             }
         });
-        
+
+
+
 
         // Toggle function for third content
         function toggleContent(slideNumber) {
