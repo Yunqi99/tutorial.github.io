@@ -789,6 +789,7 @@ footer {
 }
 
 
+
 @media (min-width: 769px) {
     #third-content {
         height: 88vh;
@@ -812,25 +813,6 @@ footer {
     #game #phone img {
         max-width: 90%;
     }
-
-    #fifth-content #bookRow {
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        background-image: url("./Asset/book\ BG-mb.png") !important;
-        background-position: 50% 0;
-        background-size: 100% 100%;
-        /* margin-bottom: 40px; */
-    }
-
-
-    #fifth-content #leftBook,
-    #fifth-content #rightBook {
-        padding: 20px 15px;
-        width: 60%;
-        /* background-color: #FECE00; */
-    }
-
 
     #fifth-content #bookRow {
         background-image: url("./Asset/book\ BG.png");
